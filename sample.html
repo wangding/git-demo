@@ -1,13 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>弹窗教学案例页面</title>
   <script type="text/javascript">
     function output(resultText){
       document.getElementById('output').childNodes[0].nodeValue=resultText;
     }
-
     function show_confirm(){
-      var confirmation=confirm("这门课程确实能让大家学会 web 自动化测试！");
+      var confirmation=confirm("通过这门课一定能学会 web 自动化测试！");
       if (confirmation==true){
         output("已经确认。");
       }
@@ -15,37 +16,26 @@
         output("已经取消！");
       }
     }
-
     function show_alert(){
-      alert("一定要给课程 5分 好评啊！");
+      alert("一定要给课程 5 分好评啊！");
       output("警告弹窗消失了。");
     }
     function show_prompt(){
-      var response = prompt("大家正在学习的这个 web 自动化测试工具是什么？","Selenium IDE");
+      var response = prompt("正在学习的这个 web 自动化测试工具是什么？","Selenium IDE");
       output(response);
     }
     function open_window(windowName){
       window.open("newWindow.html",windowName);
     }
-    </script>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>弹窗教学案例页面</title>
+   </script>
 </head>
 <body>
-<div id="main">
-	<h1>弹窗教学案例页面</h1>
+	<h1 style="text-align: center;">弹窗教学案例页面</h1>
 	<hr />
-  <input type="button" id="btnConfirm" onclick="show_confirm()" value="显示 confirm 弹窗" /><br />
-  <input type="button" id="btnAlert" onclick="show_alert()" value="显示 alert 弹窗" /><br />
-  <input type="button" id="btnPrompt" onclick="show_prompt()" value="显示 prompt 弹窗" /><br />
-  <a href="newWindow.html" id="lnkNewWindow" target="_blank">新建窗口</a><br />
-  <input type="button" id="btnNewNamelessWindow" onclick="open_window()" value="打开无名窗口" /><br />
-  <input type="button" id="btnNewNamedWindow" onclick="open_window('Mike')" value="打开命名窗口" />
-
-  </div>
+  <input type="button" id="btnAlert" onclick="show_alert()" value="显示 alert 弹窗" />    
+  <input type="button" id="btnConfirm" onclick="show_confirm()" value="显示 confirm 弹窗" />
+  <input type="button" id="btnPrompt" onclick="show_prompt()" value="显示 prompt 弹窗" />
   <hr />
-  <div id="footer">
   <p id="output">  </p>
-  </div>
 </body>
 </html>
