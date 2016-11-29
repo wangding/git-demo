@@ -1,0 +1,6 @@
+{
+  "name": "Test",
+  "tagline": ":hourglass_flowing_sand: 用来学习 github 的测试仓库。",
+  "body": "# test\r\n用来学习 github 的测试仓库。\r\n\r\n文件目录  \r\n- [hello world 页面](hello.html)\r\n- [issue 用法](bugs.md)\r\n- [MarkDown 三级列表测试页面](re.md)\r\n\r\n表情测试。  \r\n:smile:  \r\n:thumbsup:  \r\n:pray:\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
