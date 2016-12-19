@@ -1,0 +1,36 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://www.baidu.com/"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "kw"
+      },
+      "text": "selenium"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "su"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "The following is the latest Selenium news posted in the Selenium blog. Please subscribe to the RSS feed to keep up-to-date with all Selenium development..."
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
