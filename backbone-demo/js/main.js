@@ -25,15 +25,15 @@ App.Router = Backbone.Router.extend({
 
     download: function (random) {
         $(document.body).append("调用了 download 路由，参数等于 " + random + <br>");
-    },
-
+    }
+    /*
     search: function (query) {
         $(document.body).append("调用了 search 路由，参数等于 " + query + <br>");
     },
 
     default: function (other) {
         $(document.body).append("你访问的 " + other + " 路由未定义<br>");
-    }
+    }*/
 });
 
 new App.Router();
