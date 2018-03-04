@@ -5,3 +5,5 @@ GitHub 的 issue 功能，对个人而言，就如同 TODO list 。
 比如在 message 中添加 #n，就可以与第 n 个 issue 进行关联。
 
 对团队而言，这就是一个协作系统。
+
+![](gravatar-home.png)
